@@ -4,14 +4,14 @@ int main()
 {
  
     long long int t,n; 
-    long long int a[10] = { 0, 1, 11, 111, 1111, 11111, 111111, 1111111, 11111111, 111111111 };
+    long long int a[10] = { 0, 1, 11, 111, 1111, 11111, 111111, 1111111, 11111111, 111111111 };  //this array is for dividing number n; 
     
     cin>>t;
     while(t--)
     {
         cin>>n;
         long long int tempn = n; int dig = 0; 
-        while (tempn>0)
+        while (tempn>0)   //finding how many digits in n
         {
             tempn = tempn/10; 
             dig++; 
